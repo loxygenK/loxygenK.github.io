@@ -22,6 +22,12 @@ jobs:
 
     - name: Aesthetic measurement
       run: yarn lint
+      
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: artifact
+        path: out
   
   deploy:
       runs-on: ubuntu-latest
