@@ -29,6 +29,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "typescript": "^3.9.3"
@@ -38,9 +39,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-		"commitmsg": "node ./my_own_linter/CommitMessage.js",
+    "commitmsg": "node ./my_own_linter/CommitMessage.js",
     "lint": "eslint \"src/**\"",
-    "be_good": "eslint \"src/**\" --fix"
+    "be_good": "eslint \"src/**\" --fix",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,9 +60,9 @@
       "last 1 safari version"
     ]
   },
-	"husky": {
-		"hooks": {
-			"commit-msg": "node ./my_own_linter/CommitMessage.js"
-		}
-	}
+  "husky": {
+    "hooks": {
+      "commit-msg": "node ./my_own_linter/CommitMessage.js"
+    }
+  }
 }
