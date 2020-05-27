@@ -30,7 +30,7 @@ jobs:
     # if: github.ref == "ref/heads/dev"
       steps:
           - name: Download Artifact
-            uses: actions/download-articaft@v1
+            uses: actions/download-artifact@v1
             with:
                 name: artifact
         
