@@ -17,9 +17,6 @@ jobs:
     - name: Install dependencies
       run: yarn install --frozen-lockfile
 
-    - name: Commit message lint
-      run: yarn commitmsg
-    
     - name: Feasibility measurement
       run: yarn build
 
