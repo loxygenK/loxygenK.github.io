@@ -1,13 +1,19 @@
 import * as React from "react";
 import { PageDestination } from "data/types/PageDestination";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Color } from "data/Value";
 
-const NavigateButtonRoot = styled.div`
+const NavigateButtonRoot = styled.div<{ border: boolean }>`
   background: ${Color.mediumGray};
   display: inline-block;
   height: 100%;
   transition: all 0.25s;
+  ${(props) =>
+    props.border
+      ? css`
+          border-bottom: 3px solid #61dafb;
+        `
+      : ""}
   :hover {
     background-color: ${Color.whitishGray};
   }
@@ -22,14 +28,17 @@ const LinkText = styled.a`
   font-size: 80%;
   text-decoration: none;
   transition: all 0.25s;
+
   :hover {
     color: ${Color.blackishGray};
   }
 `;
 
 export function NavigateButton(props: PageDestination): JSX.Element {
+  const isCurrentPage = window.location.pathname === props.url;
+
   return (
-    <NavigateButtonRoot>
+    <NavigateButtonRoot border={isCurrentPage}>
       <LinkText href={props.url}>{props.caption}</LinkText>
     </NavigateButtonRoot>
   );
