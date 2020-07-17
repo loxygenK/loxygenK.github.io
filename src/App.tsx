@@ -9,7 +9,7 @@ import { Drawer } from "./pages/drawer/Drawer";
 const ReactApp = styled.div`
   background-color: ${Color.black};
   color: ${Color.white};
-  min-height: calc(100vh - 3em);
+  min-height: calc(100vh - 2em);
   font-size: 150%;
 `;
 
@@ -19,12 +19,12 @@ const FixedHeader = styled.header`
   left: 0;
 
   width: 100%;
-  height: 3em;
+  height: 4.5rem;
 `;
 
 const ContentWrapper = styled.div`
-  margin: 3em 0 0;
-  padding: 3em 1em;
+  margin: 3rem 0 0;
+  padding: 4.5rem 1em;
 
   @media screen and (max-width: 450px) {
     font-size: 0.7em;
