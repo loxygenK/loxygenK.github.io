@@ -4,6 +4,10 @@ import styled, { css } from "styled-components";
 import { Color } from "data/Value";
 
 const NavigateButtonRoot = styled.a<{ border: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 80%;
   color: ${Color.white};
   background: ${Color.mediumGray};
@@ -14,10 +18,6 @@ const NavigateButtonRoot = styled.a<{ border: boolean }>`
 
   border-right: 2px solid ${Color.blackishGray};
 
-  text-align: center;
-  align-content: center;
-  vertical-align: center;
-
   transition: all 0.25s;
 
   ${(props) =>
@@ -25,7 +25,9 @@ const NavigateButtonRoot = styled.a<{ border: boolean }>`
       ? css`
           border-bottom: 3px solid #61dafb;
         `
-      : ""}
+      : css`
+          padding-bottom: 3px;
+        `}
   :hover {
     background-color: ${Color.whitishGray};
     color: ${Color.blackishGray};
