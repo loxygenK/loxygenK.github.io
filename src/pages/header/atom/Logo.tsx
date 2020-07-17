@@ -2,7 +2,10 @@ import * as React from "react";
 import styled from "styled-components";
 import { Color } from "data/Value";
 
-const LogoRoot = styled.span`
+const LogoWrapper = styled.a`
+  text-decoration: none;
+  color: unset;
+
   display: inline-block;
   padding: 0.7em 2em;
   line-height: 0.9em;
@@ -25,9 +28,9 @@ const SubNameDiv = styled.div`
 
 export function Logo() {
   return (
-    <LogoRoot>
+    <LogoWrapper href="/">
       <MainNameDiv>loxygen.k</MainNameDiv>
       <SubNameDiv>flisan</SubNameDiv>
-    </LogoRoot>
+    </LogoWrapper>
   );
 }
