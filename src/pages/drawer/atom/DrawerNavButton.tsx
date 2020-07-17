@@ -1,12 +1,28 @@
 import * as React from "react";
 import { PageDestination } from "data/types/PageDestination";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const DrawerNavButtonRoot = styled.div`
+const DrawerNavButtonRoot = styled.div<{ border: boolean }>`
   background-color: #37376d;
   padding: 0.5em;
+  margin: 2px;
+
+  ${(props) =>
+    props.border
+      ? css`
+          border-left: 3px solid #6262b1;
+        `
+      : css`
+          padding-left: calc(0.5em + 3px);
+        `}
 `;
 
 export function DrawerNavButton(props: PageDestination) {
-  return <DrawerNavButtonRoot>{props.caption}</DrawerNavButtonRoot>;
+  const isCurrentPage = window.location.pathname === props.url;
+
+  return (
+    <DrawerNavButtonRoot border={isCurrentPage}>
+      {props.caption}
+    </DrawerNavButtonRoot>
+  );
 }
