@@ -4,6 +4,7 @@ import { Color } from "data/Value";
 import { Header } from "pages/header/Header";
 import { AppRouter } from "./pages/Router";
 import { NavigatesTo } from "./data/NavigatesTo";
+import { Drawer } from "./pages/drawer/Drawer";
 
 const ReactApp = styled.div`
   background-color: ${Color.black};
@@ -36,6 +37,7 @@ function App() {
       <FixedHeader className="App-header">
         <Header navigatesTo={NavigatesTo} />
       </FixedHeader>
+      <Drawer isOpen={false} />
       <ContentWrapper>
         <AppRouter />
       </ContentWrapper>
