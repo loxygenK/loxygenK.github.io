@@ -8,7 +8,7 @@ export function AppRouter(): JSX.Element {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
+        <Route path="" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );
