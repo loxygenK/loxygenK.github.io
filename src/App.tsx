@@ -23,6 +23,7 @@ const FixedHeader = styled.header`
 
 const ContentWrapper = styled.div`
   margin: 3em 0 0;
+  padding: 3em;
 `;
 
 function App() {
