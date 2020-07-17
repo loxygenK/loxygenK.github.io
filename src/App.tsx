@@ -42,7 +42,11 @@ function App() {
           onDrawerOpen={() => setDrawerOpen(true)}
         />
       </FixedHeader>
-      <Drawer isOpen={drawerOpen} pages={NavigatesTo} />
+      <Drawer
+        isOpen={drawerOpen}
+        pages={NavigatesTo}
+        onClosed={() => setDrawerOpen(false)}
+      />
       <ContentWrapper>
         <AppRouter />
       </ContentWrapper>
