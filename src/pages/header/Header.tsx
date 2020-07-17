@@ -8,6 +8,16 @@ import { Navigator } from "./mol/Navigator";
 const HeaderRoot = styled.div`
   background-color: ${Color.blackishGray};
   height: 3em;
+
+  @media screen and (max-width: 700px) {
+    text-align: center;
+  }
+`;
+
+const HideOnSmartphone = styled.span`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 type HeaderProps = {
@@ -18,7 +28,9 @@ export function Header(props: HeaderProps): JSX.Element {
   return (
     <HeaderRoot>
       <Logo />
-      <Navigator navigatesTo={props.navigatesTo} />
+      <HideOnSmartphone>
+        <Navigator navigatesTo={props.navigatesTo} />
+      </HideOnSmartphone>
     </HeaderRoot>
   );
 }

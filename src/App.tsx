@@ -23,7 +23,11 @@ const FixedHeader = styled.header`
 
 const ContentWrapper = styled.div`
   margin: 3em 0 0;
-  padding: 3em;
+  padding: 3em 1em;
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.7em;
+  }
 `;
 
 function App() {

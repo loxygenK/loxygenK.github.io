@@ -7,6 +7,7 @@ const LogoRoot = styled.span`
   padding: 0.7em 2em;
   line-height: 0.9em;
   transition: all 0.25s;
+  text-align: left;
   :hover {
     color: ${Color.whitishGray};
     cursor: pointer;
@@ -15,7 +16,7 @@ const LogoRoot = styled.span`
 
 const MainNameDiv = styled.div`
   font-size: 120%;
-  border-bottom: #555255 1px solid;
+  border-bottom: #555255 2px solid;
 `;
 
 const SubNameDiv = styled.div`
