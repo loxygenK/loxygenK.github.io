@@ -1,28 +1,45 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styled from "styled-components";
+import { Color } from "data/Value";
+import { Header } from "pages/header/Header";
+import { AppRouter } from "./pages/Router";
+import { NavigatesTo } from "./data/NavigatesTo";
 
-import { TestComp } from "comps/TestComp";
+const ReactApp = styled.div`
+  background-color: ${Color.black};
+  color: ${Color.white};
+  min-height: 100vh;
+  font-size: 150%;
+`;
+
+const FixedHeader = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3em;
+`;
+
+const ContentWrapper = styled.div`
+  margin: 3em 0 0;
+  padding: 3em 1em;
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.7em;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <TestComp />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReactApp>
+      <FixedHeader className="App-header">
+        <Header navigatesTo={NavigatesTo} />
+      </FixedHeader>
+      <ContentWrapper>
+        <AppRouter />
+      </ContentWrapper>
+    </ReactApp>
   );
 }
 
