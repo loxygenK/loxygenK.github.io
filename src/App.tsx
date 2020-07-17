@@ -1,28 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styled from "styled-components";
+import { Color } from "data/Value";
+import { Header } from "pages/header/Header";
+import { AppRouter } from "./pages/Router";
+import { NavigatesTo } from "./data/NavigatesTo";
 
-import { TestComp } from "comps/TestComp";
+const ReactApp = styled.div`
+  background-color: ${Color.black};
+  color: ${Color.white};
+  height: 100vh;
+  font-size: 150%;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <ReactApp>
       <header className="App-header">
-        <TestComp />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header navigatesTo={NavigatesTo} />
       </header>
-    </div>
+      <AppRouter />
+    </ReactApp>
   );
 }
 
