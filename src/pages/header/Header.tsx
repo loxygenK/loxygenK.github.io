@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Color } from "data/Value";
 import styled from "styled-components";
-import { Logo } from "./atom/Logo";
+import { Logo } from "../../common/Logo";
 import { PageDestination } from "../../data/types/PageDestination";
 import { Navigator } from "./mol/Navigator";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const HeaderRoot = styled.div`
   background-color: ${Color.blackishGray};
@@ -20,8 +21,21 @@ const HideOnSmartphone = styled.span`
   }
 `;
 
+const ShowOnSmartphone = styled.span`
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+`;
+
+const Hamburger = styled(GiHamburgerMenu)`
+  position: fixed;
+  top: 1em;
+  right: 1em;
+`;
+
 type HeaderProps = {
   navigatesTo: PageDestination[];
+  onDrawerOpen: () => void;
 };
 
 export function Header(props: HeaderProps): JSX.Element {
@@ -31,6 +45,9 @@ export function Header(props: HeaderProps): JSX.Element {
       <HideOnSmartphone>
         <Navigator navigatesTo={props.navigatesTo} />
       </HideOnSmartphone>
+      <ShowOnSmartphone>
+        <Hamburger onClick={() => props.onDrawerOpen()} />
+      </ShowOnSmartphone>
     </HeaderRoot>
   );
 }

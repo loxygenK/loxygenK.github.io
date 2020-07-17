@@ -32,12 +32,17 @@ const ContentWrapper = styled.div`
 `;
 
 function App() {
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
+
   return (
     <ReactApp>
       <FixedHeader className="App-header">
-        <Header navigatesTo={NavigatesTo} />
+        <Header
+          navigatesTo={NavigatesTo}
+          onDrawerOpen={() => setDrawerOpen(true)}
+        />
       </FixedHeader>
-      <Drawer isOpen={false} />
+      <Drawer isOpen={drawerOpen} pages={NavigatesTo} />
       <ContentWrapper>
         <AppRouter />
       </ContentWrapper>
