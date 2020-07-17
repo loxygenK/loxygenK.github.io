@@ -8,7 +8,7 @@ import { NavigatesTo } from "./data/NavigatesTo";
 const ReactApp = styled.div`
   background-color: ${Color.black};
   color: ${Color.white};
-  min-height: 100vh;
+  min-height: calc(100vh - 3em);
   font-size: 150%;
 `;
 
