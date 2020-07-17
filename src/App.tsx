@@ -13,11 +13,11 @@ const ReactApp = styled.div`
 `;
 
 const FixedHeader = styled.header`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
-  width: 100vw;
+  width: 100%;
   height: 3em;
 `;
 
