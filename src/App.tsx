@@ -4,6 +4,7 @@ import { Color } from "data/Value";
 import { Header } from "pages/header/Header";
 import { AppRouter } from "./pages/Router";
 import { NavigatesTo } from "./data/NavigatesTo";
+import { Drawer } from "./pages/drawer/Drawer";
 
 const ReactApp = styled.div`
   background-color: ${Color.black};
@@ -31,11 +32,21 @@ const ContentWrapper = styled.div`
 `;
 
 function App() {
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
+
   return (
     <ReactApp>
       <FixedHeader className="App-header">
-        <Header navigatesTo={NavigatesTo} />
+        <Header
+          navigatesTo={NavigatesTo}
+          onDrawerOpen={() => setDrawerOpen(true)}
+        />
       </FixedHeader>
+      <Drawer
+        isOpen={drawerOpen}
+        pages={NavigatesTo}
+        onClosed={() => setDrawerOpen(false)}
+      />
       <ContentWrapper>
         <AppRouter />
       </ContentWrapper>
