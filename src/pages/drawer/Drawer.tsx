@@ -31,6 +31,8 @@ const CloseButton = styled.div`
   border-top: 1px solid #43436c;
 
   font-size: 0.75em;
+
+  user-select: none;
 `;
 
 const AnimatedDrawerRoot = animated(DrawerRoot);

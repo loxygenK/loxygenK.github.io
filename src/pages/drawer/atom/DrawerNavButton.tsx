@@ -6,6 +6,7 @@ const DrawerNavButtonRoot = styled.div<{ border: boolean }>`
   background-color: #37376d;
   padding: 0.5em;
   margin: 2px;
+  user-select: none;
 
   ${(props) =>
     props.border
