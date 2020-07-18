@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { BaseColors } from "data/Value";
-import { Header } from "pages/header/Header";
-import { AppRouter } from "./pages/Router";
+import { Header } from "comps/header/Header";
+import { AppRouter } from "./comps/Router";
 import { NavigatesTo } from "./data/NavigatesTo";
-import { Drawer } from "./pages/drawer/Drawer";
+import { Drawer } from "./comps/drawer/Drawer";
 
 const ReactApp = styled.div`
   background-color: ${BaseColors.black};
