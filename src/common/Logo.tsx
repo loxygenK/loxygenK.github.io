@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Color } from "data/Value";
+import { BaseColors } from "data/Value";
 
 const LogoWrapper = styled.a`
   text-decoration: none;
@@ -12,7 +12,7 @@ const LogoWrapper = styled.a`
   transition: all 0.25s;
   text-align: left;
   :hover {
-    color: ${Color.whitishGray};
+    color: ${BaseColors.whitishGray};
     cursor: pointer;
   }
 `;

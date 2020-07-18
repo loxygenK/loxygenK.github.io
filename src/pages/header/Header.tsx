@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Color } from "data/Value";
+import { BaseColors } from "data/Value";
 import styled from "styled-components";
 import { Logo } from "../../common/Logo";
 import { PageDestination } from "../../data/types/PageDestination";
@@ -7,7 +7,7 @@ import { Navigator } from "./mol/Navigator";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const HeaderRoot = styled.div`
-  background-color: ${Color.blackishGray};
+  background-color: ${BaseColors.blackishGray};
   height: 3em;
 
   @media screen and (max-width: 700px) {

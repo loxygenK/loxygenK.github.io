@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Color } from "data/Value";
+import { BaseColors } from "data/Value";
 import { Header } from "pages/header/Header";
 import { AppRouter } from "./pages/Router";
 import { NavigatesTo } from "./data/NavigatesTo";
 import { Drawer } from "./pages/drawer/Drawer";
 
 const ReactApp = styled.div`
-  background-color: ${Color.black};
-  color: ${Color.white};
+  background-color: ${BaseColors.black};
+  color: ${BaseColors.white};
   min-height: calc(100vh - 2em);
   font-size: 150%;
 `;
