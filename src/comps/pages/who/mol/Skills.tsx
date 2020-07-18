@@ -1,6 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FrameworkSkills, LangSkills } from "../../../../data/LangSkills";
+import {
+  FrameworkSkills,
+  LangSkills,
+  MiscSkills,
+} from "../../../../data/LangSkills";
 import { SubTitle } from "../../../common/Formatter";
 import { SkillList } from "./SkillList";
 
@@ -16,6 +20,7 @@ export function Skills() {
       <SubTitle>使えるもの</SubTitle>
       <SkillList caption={"言語"} skills={LangSkills} />
       <SkillList caption={"フレームワーク"} skills={FrameworkSkills} />
+      <SkillList caption={"その他もろもろ"} skills={MiscSkills} />
     </SkillWrapper>
   );
 }

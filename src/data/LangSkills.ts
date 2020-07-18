@@ -13,6 +13,12 @@ export const LangSkills: SkillData[] = [
     level: Level["Favorite"],
   },
   {
+    name: "Java",
+    description:
+      "プログラミング始めたてのころにメモ帳でJavaを書いて挫折したことあります",
+    level: Level["Favorite"],
+  },
+  {
     name: "C#",
     description: "Unityのときに使います",
     level: Level["Intermediate"],
@@ -59,5 +65,33 @@ export const FrameworkSkills: SkillData[] = [
     name: "React",
     description: "Reactの書き方がとても好きです",
     level: Level["Intermediate"],
+  },
+];
+
+export const MiscSkills: SkillData[] = [
+  {
+    name: "Git",
+    description: "ないとしんどい…",
+    level: Level["Intermediate"],
+  },
+  {
+    name: "Linux",
+    description: "ArchLinuxを愛用しています",
+    level: Level["Intermediate"],
+  },
+  {
+    name: "Adobe XD",
+    description: "Adobe XDとMacの組み合わせが好きです(個人の感想)",
+    level: Level["Running"],
+  },
+  {
+    name: "GitHub CI",
+    description: "このポトフォでも一応走ってます",
+    level: Level["Running"],
+  },
+  {
+    name: "JetBrains",
+    description: "補完がおばけで好きです",
+    level: Level["Favorite"],
   },
 ];
