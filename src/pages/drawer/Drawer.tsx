@@ -10,9 +10,12 @@ const DrawerRoot = styled.div`
 
   font-size: 0.9em;
 
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
+
+  overflow: scroll;
 
   box-sizing: border-box;
 
