@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PageDestination } from "data/types/PageDestination";
 import styled, { css } from "styled-components";
-import { Color } from "data/Value";
+import { BaseColors } from "data/Value";
 
 const NavigateButtonRoot = styled.a<{ border: boolean }>`
   display: flex;
@@ -9,14 +9,14 @@ const NavigateButtonRoot = styled.a<{ border: boolean }>`
   justify-content: center;
 
   font-size: 80%;
-  color: ${Color.white};
-  background: ${Color.mediumGray};
+  color: ${BaseColors.white};
+  background: ${BaseColors.mediumGray};
   text-decoration: none;
 
   padding: 0 1em;
   width: 5em;
 
-  border-right: 2px solid ${Color.blackishGray};
+  border-right: 2px solid ${BaseColors.blackishGray};
 
   transition: all 0.25s;
 
@@ -29,8 +29,8 @@ const NavigateButtonRoot = styled.a<{ border: boolean }>`
           padding-bottom: 3px;
         `}
   :hover {
-    background-color: ${Color.whitishGray};
-    color: ${Color.blackishGray};
+    background-color: ${BaseColors.whitishGray};
+    color: ${BaseColors.blackishGray};
   }
 `;
 

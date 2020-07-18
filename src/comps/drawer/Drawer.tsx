@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
-import { Logo } from "../../common/Logo";
+import { Logo } from "../common/Logo";
 import { PageDestination } from "../../data/types/PageDestination";
 import { DrawerNavigation } from "./mol/DrawerNavigation";
 

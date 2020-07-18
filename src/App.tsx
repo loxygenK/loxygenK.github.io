@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Color } from "data/Value";
-import { Header } from "pages/header/Header";
-import { AppRouter } from "./pages/Router";
+import { BaseColors } from "data/Value";
+import { Header } from "comps/header/Header";
+import { AppRouter } from "./comps/Router";
 import { NavigatesTo } from "./data/NavigatesTo";
-import { Drawer } from "./pages/drawer/Drawer";
+import { Drawer } from "./comps/drawer/Drawer";
 
 const ReactApp = styled.div`
-  background-color: ${Color.black};
-  color: ${Color.white};
+  background-color: ${BaseColors.black};
+  color: ${BaseColors.white};
   min-height: calc(100vh - 2em);
   font-size: 150%;
 `;
@@ -24,7 +24,7 @@ const FixedHeader = styled.header`
 
 const ContentWrapper = styled.div`
   margin: 3rem 0 0;
-  padding: 4.5rem 1em;
+  padding: 4.5rem 2em;
 
   @media screen and (max-width: 450px) {
     font-size: 0.7em;

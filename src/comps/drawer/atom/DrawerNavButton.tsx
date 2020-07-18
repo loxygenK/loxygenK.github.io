@@ -1,6 +1,7 @@
 import * as React from "react";
 import { PageDestination } from "data/types/PageDestination";
 import styled, { css } from "styled-components";
+import { UnstyledAnchor } from "../../common/UnstyledAnchor";
 
 const DrawerNavButtonRoot = styled.div<{ border: boolean }>`
   background-color: #37376d;
@@ -22,8 +23,10 @@ export function DrawerNavButton(props: PageDestination) {
   const isCurrentPage = window.location.pathname === props.url;
 
   return (
-    <DrawerNavButtonRoot border={isCurrentPage}>
-      {props.caption}
-    </DrawerNavButtonRoot>
+    <UnstyledAnchor href={props.url}>
+      <DrawerNavButtonRoot border={isCurrentPage}>
+        {props.caption}
+      </DrawerNavButtonRoot>
+    </UnstyledAnchor>
   );
 }
