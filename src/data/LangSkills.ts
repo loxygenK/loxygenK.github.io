@@ -15,7 +15,7 @@ export const LangSkills: SkillData[] = [
   {
     name: "Java",
     description:
-      "プログラミング始めたてのころにメモ帳でJavaを書いて挫折したことあります",
+      "プログラミング始めたてのころにメモ帳でJavaを書いて挫折したことがあります",
     level: Level["Favorite"],
   },
   {

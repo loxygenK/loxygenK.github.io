@@ -1,20 +1,41 @@
 import * as React from "react";
 import styled from "styled-components";
+import { BigText, DetailedText } from "../../../common/Formatter";
 
-const MarginedBox = styled.div`
-  margin: 1.5rem;
+const WelcomeTextRoot = styled.div`
   font-size: 1.2em;
 `;
 
-const BiggerText = styled.span`
-  font-size: 1.4em;
+const HelpText = styled(DetailedText)`
+  display: block;
+  margin-top: 1em;
+`;
+
+const ShowInSmartphone = styled.span`
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+`;
+
+const HideInSmartphone = styled.span`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export function WelcomeText() {
   return (
-    <MarginedBox>
+    <WelcomeTextRoot>
       Welcome to <br />
-      <BiggerText>loxygen.k Portfolio</BiggerText>
-    </MarginedBox>
+      <BigText>loxygen.k Portfolio</BigText>
+      <HelpText>
+        <ShowInSmartphone>
+          右上のボタンから別のページに移動できます
+        </ShowInSmartphone>
+        <HideInSmartphone>
+          上部ヘッダーのボタンから別のページに移動できます
+        </HideInSmartphone>
+      </HelpText>
+    </WelcomeTextRoot>
   );
 }

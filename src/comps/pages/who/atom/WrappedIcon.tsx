@@ -6,7 +6,7 @@ export const Wraparounder = styled.span`
   float: left;
   margin-right: 1em;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     float: none;
     display: block;
     text-align: center;
