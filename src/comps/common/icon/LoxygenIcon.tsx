@@ -4,7 +4,7 @@ import { CircledIcon } from "./CircledIcon";
 export function LoxygenIcon() {
   return (
     <div>
-      <CircledIcon src="loxygen.png" />
+      <CircledIcon width="12rem" src="loxygen.png" />
     </div>
   );
 }
