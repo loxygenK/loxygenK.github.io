@@ -23,6 +23,11 @@ export const LangSkills: SkillData[] = [
     level: Level["Intermediate"],
   },
   {
+    name: "CSS",
+    description: "Reactのときにstyled-componentで使います",
+    level: Level["Running"],
+  },
+  {
     name: "Go",
     description: "勉強したいといいながらしてない",
     level: Level["OnlyInterested"],

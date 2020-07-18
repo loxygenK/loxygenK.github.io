@@ -12,7 +12,14 @@ export type LevelData = {
   icon: IconType;
 };
 
-export const Level: { [key: string]: LevelData } = {
+export type LevelName =
+  | "OnlyInterested"
+  | "Running"
+  | "Bit"
+  | "Intermediate"
+  | "Favorite";
+
+export const Level: { [key in LevelName]: LevelData } = {
   OnlyInterested: {
     caption: "興味ありあり",
     icon: BsChatDotsFill,
@@ -34,11 +41,3 @@ export const Level: { [key: string]: LevelData } = {
     icon: AiFillHeart,
   },
 };
-
-/*
-  | "OnlyInterested"
-  | "Running"
-  | "A bit"
-  | "Intermediate"
-  | "Favorite";
-*/
