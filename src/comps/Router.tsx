@@ -6,7 +6,7 @@ import { WhoAmIPage } from "./pages/who/WhoAmIPage";
 
 export function AppRouter(): JSX.Element {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/who" component={WhoAmIPage} />
