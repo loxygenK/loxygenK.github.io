@@ -47,24 +47,24 @@ export const LangSkills: SkillData[] = [
 
 export const FrameworkSkills: SkillData[] = [
   {
-    name: "Flutter",
-    description: "Android アプリのときに最近良く使います",
-    level: Level["Running"],
-  },
-  {
     name: "Android Native",
     description: "フレームワークではないかもしれない…",
     level: Level["Intermediate"],
   },
   {
-    name: "Unity",
-    description: "3Dゲーム開発をしたくなると触ります。そんなにはできません。",
-    level: Level["Running"],
-  },
-  {
     name: "React",
     description: "Reactの書き方がとても好きです",
     level: Level["Intermediate"],
+  },
+  {
+    name: "Flutter",
+    description: "Android アプリのときに最近良く使います",
+    level: Level["Running"],
+  },
+  {
+    name: "Unity",
+    description: "3Dゲーム開発をしたくなると触ります。そんなにはできません。",
+    level: Level["Running"],
   },
 ];
 
