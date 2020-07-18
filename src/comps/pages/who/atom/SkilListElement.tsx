@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SkillData } from "../../../../data/types/SkillData";
-import { SubText } from "../../../common/Formatter";
+import { BigText, SubText } from "../../../common/Formatter";
 import { LevelComponent } from "../../../common/types/LevelComponent";
 import styled from "styled-components";
 
@@ -14,7 +14,7 @@ export const SkillListElementRoot = styled.div`
 export function SkillListElement(skill: SkillData) {
   return (
     <SkillListElementRoot>
-      {skill.name}
+      <BigText>{skill.name}</BigText>
       <LevelComponent level={skill.level} />
       <SubText>{skill.description}</SubText>
     </SkillListElementRoot>
