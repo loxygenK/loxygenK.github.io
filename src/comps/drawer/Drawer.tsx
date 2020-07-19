@@ -4,6 +4,7 @@ import { useSpring, animated } from "react-spring";
 import { Logo } from "../common/Logo";
 import { PageDestination } from "../../data/types/PageDestination";
 import { DrawerNavigation } from "./mol/DrawerNavigation";
+import { ModalBackground } from "./atom/ModalBackground";
 
 const DrawerRoot = styled.div`
   background-color: #292942;
@@ -45,18 +46,21 @@ type DrawerProps = {
 
 export function Drawer(props: DrawerProps) {
   const { x } = useSpring({
-    x: props.isOpen ? 0 : -15,
+    x: props.isOpen ? 0 : -10,
   });
 
   return (
-    <AnimatedDrawerRoot
-      style={{
-        left: x.interpolate((o) => `${o}em`),
-      }}
-    >
-      <Logo />
-      <DrawerNavigation pages={props.pages} />
-      <CloseButton onClick={props.onClosed}>閉じる</CloseButton>
-    </AnimatedDrawerRoot>
+    <div>
+      <ModalBackground enabled={props.isOpen} />
+      <AnimatedDrawerRoot
+        style={{
+          left: x.interpolate((o) => `${o}em`),
+        }}
+      >
+        <Logo />
+        <DrawerNavigation pages={props.pages} />
+        <CloseButton onClick={props.onClosed}>閉じる</CloseButton>
+      </AnimatedDrawerRoot>
+    </div>
   );
 }
