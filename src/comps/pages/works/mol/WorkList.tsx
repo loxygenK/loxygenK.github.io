@@ -1,19 +1,16 @@
 import * as React from "react";
 import { MultipleRowList } from "../../../common/MultipleRowList";
 import { WorkListElement } from "../atom/WorkListElement";
+import { Works } from "../../../../data/Works";
 
 export function WorkList() {
   return (
-    <MultipleRowList>
-      <WorkListElement
-        imgUrl={"works/musical-typer.png"}
-        name={"musical-typer"}
-        techs={["Python", "Pygame"]}
-        description={"musical-typer"}
-        tips={
-          "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html"
-        }
-      />
-    </MultipleRowList>
+    <>
+      {Works.map((value, index) => (
+        <MultipleRowList key={index}>
+          <WorkListElement workData={value} />
+        </MultipleRowList>
+      ))}
+    </>
   );
 }

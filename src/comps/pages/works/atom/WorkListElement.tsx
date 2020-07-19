@@ -1,21 +1,29 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DetailedText } from "../../../common/Formatter";
+import { DetailedText, SubText } from "../../../common/Formatter";
+import { WorkData } from "../../../../data/types/WorkData";
 
 const WorkListElementRoot = styled.span`
   display: inline-block;
   padding: 0.3em;
+  margin-bottom: 3em;
 
   overflow-wrap: break-word;
 
-  background-color: #383863;
+  background-color: #3c3c5f;
+
+  transition: all 0.25s;
+
+  :hover {
+    background: #31315c;
+  }
 `;
 
 const SizedImage = styled.img`
   width: 100%;
   height: 7em;
   object-fit: cover;
-  object-position: 50% 15%;
+  object-position: 50% 50%;
 `;
 
 const WorkTitle = styled.div`
@@ -32,24 +40,20 @@ const UsedTechTag = styled.span`
   font-size: 0.5em;
 `;
 
-export function WorkListElement(props: {
-  imgUrl: string;
-  name: string;
-  techs: string[];
-  description: string;
-  tips: string;
-}) {
+export function WorkListElement(props: { workData: WorkData }) {
   return (
     <WorkListElementRoot>
-      <SizedImage src={props.imgUrl} alt={props.name} />
-      <WorkTitle>{props.name}</WorkTitle>
+      <SizedImage src={props.workData.imageUrl} alt={props.workData.name} />
+      <WorkTitle>{props.workData.name}</WorkTitle>
       <div>
-        {props.techs.map((str, index) => (
+        {props.workData.techs.map((str, index) => (
           <UsedTechTag key={index}>{str}</UsedTechTag>
         ))}
       </div>
-      <div>{props.description}</div>
-      <DetailedText>{props.tips}</DetailedText>
+      <div>
+        <SubText>{props.workData.description}</SubText>
+      </div>
+      <DetailedText>{props.workData.tips}</DetailedText>
     </WorkListElementRoot>
   );
 }
