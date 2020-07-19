@@ -4,8 +4,8 @@ import {
   FrameworkSkills,
   LangSkills,
   MiscSkills,
-} from "../../../../data/content/LangSkills";
-import { SubTitle } from "../../../common/Formatter";
+} from "data/content/LangSkills";
+import { SubTitle } from "comps/common/Formatter";
 import { SkillList } from "./SkillList";
 
 const SkillWrapper = styled.div`

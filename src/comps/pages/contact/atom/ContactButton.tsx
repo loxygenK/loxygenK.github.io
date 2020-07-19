@@ -1,7 +1,7 @@
 import * as React from "react";
-import { ContactData } from "../../../../data/types/ContactData";
+import { ContactData } from "data/types/ContactData";
 import styled from "styled-components";
-import { UnstyledAnchor } from "../../../common/UnstyledAnchor";
+import { UnstyledAnchor } from "comps/common/UnstyledAnchor";
 
 export const ContactButtonRoot = styled.div<{
   background: string;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SubTitle, Title } from "../../common/Formatter";
+import { SubTitle, Title } from "comps/common/Formatter";
 import { WorkList } from "./mol/WorkList";
 
 export function WorksPage() {

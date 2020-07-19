@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DetailedText, SubText } from "../../../common/Formatter";
-import { WorkData } from "../../../../data/types/WorkData";
-import { UnstyledAnchor } from "../../../common/UnstyledAnchor";
+import { DetailedText, SubText } from "comps/common/Formatter";
+import { WorkData } from "data/types/WorkData";
+import { UnstyledAnchor } from "comps/common/UnstyledAnchor";
 
 const WorkListElementRoot = styled.span`
   display: inline-block;

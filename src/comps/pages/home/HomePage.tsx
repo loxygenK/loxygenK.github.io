@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LoxygenIcon } from "../../common/icon/LoxygenIcon";
+import { LoxygenIcon } from "comps/common/icon/LoxygenIcon";
 import styled from "styled-components";
 import { WelcomeText } from "./atom/WelcomeText";
 import { IntrocutionText } from "./atom/IntroductionText";

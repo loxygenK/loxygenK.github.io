@@ -1,4 +1,4 @@
-import { SkillData, SkillLevel } from "../types/SkillTypes";
+import { SkillData, SkillLevel } from "data/types/SkillTypes";
 
 export const LangSkills: SkillData[] = [
   {

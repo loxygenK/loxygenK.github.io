@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PageDestination } from "data/types/PageDestination";
 import styled, { css } from "styled-components";
-import { UnstyledAnchor } from "../../common/UnstyledAnchor";
+import { UnstyledAnchor } from "comps/common/UnstyledAnchor";
 
 const DrawerNavButtonRoot = styled.div<{ border: boolean }>`
   background-color: #37376d;
