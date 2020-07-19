@@ -3,7 +3,7 @@ import { Level } from "./types/Level";
 
 export const LangSkills: SkillData[] = [
   {
-    name: "kotlin",
+    name: "Kotlin",
     description: "ラムダの書き方と拡張関数が大好きです",
     level: Level["Favorite"],
   },
