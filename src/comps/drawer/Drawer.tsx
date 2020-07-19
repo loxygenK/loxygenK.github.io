@@ -51,7 +51,7 @@ export function Drawer(props: DrawerProps) {
 
   return (
     <div>
-      <ModalBackground enabled={props.isOpen} />
+      <ModalBackground enabled={props.isOpen} onClick={props.onClosed} />
       <AnimatedDrawerRoot
         style={{
           left: x.interpolate((o) => `${o}em`),

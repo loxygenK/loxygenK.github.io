@@ -14,18 +14,21 @@ const ModalBackgroundRoot = styled.div`
 
 const AnimatedModalBackgroundRoot = animated(ModalBackgroundRoot);
 
-export function ModalBackground(props: { enabled: boolean }) {
+export function ModalBackground(props: {
+  enabled: boolean;
+  onClick: () => void;
+}) {
   const transitions = useTransition(props.enabled, null, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
   });
   return (
-    <>
+    <div onClick={props.onClick}>
       {transitions.map(
         ({ item, key, props }) =>
           item && <AnimatedModalBackgroundRoot key={key} style={props} />
       )}
-    </>
+    </div>
   );
 }
