@@ -9,7 +9,7 @@ const ModalBackgroundRoot = styled.div`
   left: 0;
   right: 0;
 
-  background-color: #000;
+  backdrop-filter: blur(10px);
 `;
 
 const AnimatedModalBackgroundRoot = animated(ModalBackgroundRoot);
