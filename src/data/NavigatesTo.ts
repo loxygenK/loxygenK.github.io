@@ -9,4 +9,8 @@ export const NavigatesTo: PageDestination[] = [
     caption: "やったこと",
     url: "/what-i-did",
   },
+  {
+    caption: "コンタクト",
+    url: "/contact",
+  },
 ];
