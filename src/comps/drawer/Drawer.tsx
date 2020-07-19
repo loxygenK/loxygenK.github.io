@@ -25,17 +25,6 @@ const DrawerRoot = styled.div`
   height: 100vh;
 `;
 
-const CloseButton = styled.div`
-  margin: 0.9em 1em;
-  padding: 0.2em 0;
-
-  border-top: 1px solid #43436c;
-
-  font-size: 0.75em;
-
-  user-select: none;
-`;
-
 const AnimatedDrawerRoot = animated(DrawerRoot);
 
 type DrawerProps = {
@@ -59,7 +48,6 @@ export function Drawer(props: DrawerProps) {
       >
         <Logo />
         <DrawerNavigation pages={props.pages} />
-        <CloseButton onClick={props.onClosed}>閉じる</CloseButton>
       </AnimatedDrawerRoot>
     </div>
   );

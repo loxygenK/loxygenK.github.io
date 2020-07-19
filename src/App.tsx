@@ -39,7 +39,7 @@ function App() {
       <FixedHeader className="App-header">
         <Header
           navigatesTo={NavigatesTo}
-          onDrawerOpen={() => setDrawerOpen(!drawerOpen)}
+          onDrawerOpen={() => setDrawerOpen(true)}
         />
       </FixedHeader>
       <Drawer
