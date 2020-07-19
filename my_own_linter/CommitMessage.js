@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require("fs");
 
 const consoleRed = "\u001b[31m";
@@ -25,4 +26,4 @@ if (!doesMatched) {
   console.log(`  ${consoleGreen}${consoleBold}†Approved†${consoleColorReset}`);
 }
 
-process.exit(!doesMatched);
+process.exit(doesMatched ? 0 : 1);

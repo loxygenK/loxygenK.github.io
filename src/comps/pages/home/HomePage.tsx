@@ -1,8 +1,8 @@
 import * as React from "react";
-import { LoxygenIcon } from "../../common/icon/LoxygenIcon";
+import { LoxygenIcon } from "comps/common/icon/LoxygenIcon";
 import styled from "styled-components";
 import { WelcomeText } from "./atom/WelcomeText";
-import { IntrocutionText } from "./atom/IntroductionText";
+import { IntroductionText } from "./atom/IntroductionText";
 
 const Centered = styled.div`
   text-align: center;
@@ -14,7 +14,7 @@ export function HomePage() {
       <Centered>
         <LoxygenIcon width="12em" />
         <WelcomeText />
-        <IntrocutionText />
+        <IntroductionText />
       </Centered>
     </div>
   );

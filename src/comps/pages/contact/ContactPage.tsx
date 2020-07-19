@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Title } from "../../common/Formatter";
+import { Title } from "comps/common/Formatter";
 import { ContactButtonList } from "./mol/ContactButtonList";
 
 export function ContactPage() {

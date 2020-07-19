@@ -5,7 +5,7 @@ import {
   DetailedText,
   SubText,
   SubTitle,
-} from "../../../common/Formatter";
+} from "comps/common/Formatter";
 import styled from "styled-components";
 
 const BasicInfoWrapper = styled.div`

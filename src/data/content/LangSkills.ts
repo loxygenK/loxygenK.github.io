@@ -1,47 +1,46 @@
-import { SkillData } from "./types/SkillData";
-import { Level } from "./types/Level";
+import { SkillData, SkillLevel } from "data/types/SkillTypes";
 
 export const LangSkills: SkillData[] = [
   {
-    name: "kotlin",
+    name: "Kotlin",
     description: "ラムダの書き方と拡張関数が大好きです",
-    level: Level["Favorite"],
+    level: SkillLevel["Favorite"],
   },
   {
     name: "Python",
     description: "簡単なスクリプトを書くときによく使います",
-    level: Level["Favorite"],
+    level: SkillLevel["Favorite"],
   },
   {
     name: "Java",
     description:
       "プログラミング始めたてのころにメモ帳でJavaを書いて挫折したことがあります",
-    level: Level["Favorite"],
+    level: SkillLevel["Favorite"],
   },
   {
     name: "TypeScript",
     description: "Reactのときに使います",
-    level: Level["Intermediate"],
+    level: SkillLevel["Intermediate"],
   },
   {
     name: "C#",
     description: "Unityのときに使います",
-    level: Level["Bit"],
+    level: SkillLevel["Bit"],
   },
   {
     name: "CSS",
     description: "Reactのときにstyled-componentで使います",
-    level: Level["Running"],
+    level: SkillLevel["Running"],
   },
   {
     name: "Go",
     description: "勉強したいといいながらしてない",
-    level: Level["OnlyInterested"],
+    level: SkillLevel["OnlyInterested"],
   },
   {
     name: "Rust",
     description: "先入観のせいでなかなか手を出せない",
-    level: Level["OnlyInterested"],
+    level: SkillLevel["OnlyInterested"],
   },
 ];
 
@@ -49,22 +48,22 @@ export const FrameworkSkills: SkillData[] = [
   {
     name: "Android Native",
     description: "フレームワークではないかもしれない…",
-    level: Level["Intermediate"],
+    level: SkillLevel["Intermediate"],
   },
   {
     name: "React",
     description: "Reactの書き方がとても好きです",
-    level: Level["Intermediate"],
+    level: SkillLevel["Intermediate"],
   },
   {
     name: "Flutter",
     description: "Android アプリのときに最近良く使います",
-    level: Level["Running"],
+    level: SkillLevel["Running"],
   },
   {
     name: "Unity",
     description: "3Dゲーム開発をしたくなると触ります。そんなにはできません。",
-    level: Level["Running"],
+    level: SkillLevel["Running"],
   },
 ];
 
@@ -72,26 +71,26 @@ export const MiscSkills: SkillData[] = [
   {
     name: "Git",
     description: "ないとしんどい…",
-    level: Level["Intermediate"],
+    level: SkillLevel["Intermediate"],
   },
   {
     name: "Linux",
     description: "ArchLinuxを愛用しています",
-    level: Level["Intermediate"],
+    level: SkillLevel["Intermediate"],
   },
   {
     name: "Adobe XD",
     description: "Adobe XDとMacの組み合わせが好きです(個人の感想)",
-    level: Level["Running"],
+    level: SkillLevel["Running"],
   },
   {
     name: "GitHub CI",
     description: "このポトフォでも一応走ってます",
-    level: Level["Running"],
+    level: SkillLevel["Running"],
   },
   {
     name: "JetBrains",
     description: "補完がおばけで好きです",
-    level: Level["Favorite"],
+    level: SkillLevel["Favorite"],
   },
 ];

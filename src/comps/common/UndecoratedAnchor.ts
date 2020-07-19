@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const UnstyledAnchor = styled.a`
+export const UndecoratedAnchor = styled.a`
   color: unset;
   text-decoration: none;
 `;

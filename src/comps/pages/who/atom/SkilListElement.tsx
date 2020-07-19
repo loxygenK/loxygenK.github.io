@@ -1,7 +1,7 @@
 import * as React from "react";
-import { SkillData } from "../../../../data/types/SkillData";
-import { BigText, SubText } from "../../../common/Formatter";
-import { LevelComponent } from "../../../common/types/LevelComponent";
+import { SkillData } from "data/types/SkillTypes";
+import { BigText, SubText } from "comps/common/Formatter";
+import { LevelComponent } from "comps/common/types/LevelComponent";
 import styled from "styled-components";
 
 const SkillListElementRoot = styled.div`

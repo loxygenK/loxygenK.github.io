@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DetailedText, SubText } from "../../../common/Formatter";
-import { WorkData } from "../../../../data/types/WorkData";
-import { UnstyledAnchor } from "../../../common/UnstyledAnchor";
+import { DetailedText, SubText } from "comps/common/Formatter";
+import { WorkData } from "data/types/WorkData";
+import { UndecoratedAnchor } from "comps/common/UndecoratedAnchor";
 
 const WorkListElementRoot = styled.span`
   display: inline-block;
@@ -42,7 +42,7 @@ const UsedTechTag = styled.span`
 
 export function WorkListElement(props: { workData: WorkData }) {
   return (
-    <UnstyledAnchor href={props.workData.link} target="_blank">
+    <UndecoratedAnchor href={props.workData.link} target="_blank">
       <WorkListElementRoot>
         <SizedImage src={props.workData.imageUrl} alt={props.workData.name} />
         <WorkTitle>{props.workData.name}</WorkTitle>
@@ -56,6 +56,6 @@ export function WorkListElement(props: { workData: WorkData }) {
         </div>
         <DetailedText>{props.workData.tips}</DetailedText>
       </WorkListElementRoot>
-    </UnstyledAnchor>
+    </UndecoratedAnchor>
   );
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BigText } from "../../../common/Formatter";
+import { BigText } from "comps/common/Formatter";
 
 const WelcomeTextRoot = styled.div`
   font-size: 1.2em;

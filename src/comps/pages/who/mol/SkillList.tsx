@@ -1,8 +1,8 @@
 import * as React from "react";
-import { SkillData } from "../../../../data/types/SkillData";
+import { SkillData } from "data/types/SkillTypes";
 import styled from "styled-components";
 import { SkillListElement } from "../atom/SkilListElement";
-import { ResponsiveWidth } from "../../../common/ResponsiveWidth";
+import { ResponsiveWidth } from "comps/common/ResponsiveWidth";
 
 const Caption = styled.div`
   font-size: 1.2em;

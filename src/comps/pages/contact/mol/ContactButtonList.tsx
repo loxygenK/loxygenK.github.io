@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Contacts } from "../../../../data/Contacts";
+import { Contacts } from "data/content/Contacts";
 import { ContactButton } from "../atom/ContactButton";
 
 const ContactButtonsRoot = styled.div`

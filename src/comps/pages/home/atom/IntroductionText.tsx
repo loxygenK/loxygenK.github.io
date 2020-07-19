@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DetailedText } from "../../../common/Formatter";
+import { DetailedText } from "comps/common/Formatter";
 
 const HelpText = styled(DetailedText)`
   display: block;
@@ -19,7 +19,7 @@ const HideInSmartphone = styled.span`
   }
 `;
 
-export function IntrocutionText() {
+export function IntroductionText() {
   return (
     <HelpText>
       <ShowInSmartphone>
