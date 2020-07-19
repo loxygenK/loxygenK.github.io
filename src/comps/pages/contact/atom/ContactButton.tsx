@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ContactData } from "data/types/ContactData";
 import styled from "styled-components";
-import { UnstyledAnchor } from "comps/common/UnstyledAnchor";
+import { UndecoratedAnchor } from "comps/common/UndecoratedAnchor";
 
 export const ContactButtonRoot = styled.div<{
   background: string;
@@ -49,7 +49,7 @@ export const LinkText = styled.div`
 
 export function ContactButton(props: { contact: ContactData }) {
   return (
-    <UnstyledAnchor href={props.contact.link} target="_blank">
+    <UndecoratedAnchor href={props.contact.link} target="_blank">
       <ContactButtonRoot background={props.contact.color}>
         <div>
           <Icon>
@@ -59,6 +59,6 @@ export function ContactButton(props: { contact: ContactData }) {
         </div>
         <LinkText>{props.contact.link}</LinkText>
       </ContactButtonRoot>
-    </UnstyledAnchor>
+    </UndecoratedAnchor>
   );
 }

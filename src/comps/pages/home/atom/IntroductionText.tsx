@@ -19,7 +19,7 @@ const HideInSmartphone = styled.span`
   }
 `;
 
-export function IntrocutionText() {
+export function IntroductionText() {
   return (
     <HelpText>
       <ShowInSmartphone>
