@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { HomePage } from "./pages/home/HomePage";
 import { NotFoundPage } from "./pages/Error404";
 import { WhoAmIPage } from "./pages/who/WhoAmIPage";
+import { WorksPage } from "./pages/works/WorksPage";
 
 export function AppRouter(): JSX.Element {
   return (
@@ -10,7 +11,7 @@ export function AppRouter(): JSX.Element {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/who/" component={WhoAmIPage} />
-        <Route exact path="/what-i-did/" component={WhoAmIPage} />
+        <Route exact path="/what-i-did/" component={WorksPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
