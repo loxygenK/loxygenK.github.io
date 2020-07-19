@@ -9,6 +9,8 @@ const DrawerNavButtonRoot = styled.div<{ border: boolean }>`
   margin: 2px;
   user-select: none;
 
+  line-height: 2em;
+
   ${(props) =>
     props.border
       ? css`

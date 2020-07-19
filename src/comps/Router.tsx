@@ -9,7 +9,8 @@ export function AppRouter(): JSX.Element {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/who/" component={WhoAmIPage} />
+        <Route exact path="/who/" component={WhoAmIPage} />
+        <Route exact path="/what-i-did/" component={WhoAmIPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
