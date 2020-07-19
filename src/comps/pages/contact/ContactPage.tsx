@@ -1,5 +1,13 @@
 import * as React from "react";
+import { Title } from "../../common/Formatter";
+import { ContactButtonList } from "./mol/ContactButtonList";
 
 export function ContactPage() {
-  return <>Div</>;
+  return (
+    <div>
+      <Title>コンタクト</Title>
+      ご連絡を取りたい人は以下からお気軽にどうぞ;
+      <ContactButtonList />
+    </div>
+  );
 }

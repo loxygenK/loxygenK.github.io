@@ -5,5 +5,4 @@ export type ContactData = {
   icon: IconType;
   color: string;
   link: string;
-  textBlack: boolean;
 };

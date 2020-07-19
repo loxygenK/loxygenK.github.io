@@ -4,23 +4,20 @@ import { FaGithub, FaTwitter } from "react-icons/all";
 export const Contacts: ContactData[] = [
   {
     caption: "Twitter (loxygenK)",
-    color: "#1da0f0",
+    color: "#2973a1",
     icon: FaTwitter,
     link: "https://twitter.com/loxygenK",
-    textBlack: false,
   },
   {
     caption: "Twitter (Flisan)",
-    color: "#3df01d",
+    color: "#29a039",
     icon: FaTwitter,
     link: "https://twitter.com/flisan_loxy",
-    textBlack: false,
   },
   {
     caption: "GitHub",
-    color: "#fdfdfd",
+    color: "#4b4b4b",
     icon: FaGithub,
     link: "https://github.com/loxygenK",
-    textBlack: true,
   },
 ];
