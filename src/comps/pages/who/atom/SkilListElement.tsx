@@ -4,17 +4,22 @@ import { BigText, SubText } from "../../../common/Formatter";
 import { LevelComponent } from "../../../common/types/LevelComponent";
 import styled from "styled-components";
 
-export const SkillListElementRoot = styled.div`
-  padding-bottom: 0.2em;
+const SkillListElementRoot = styled.div`
+  padding: 1em;
   margin-bottom: 0.8em;
 
-  border-bottom: 2px solid #424266;
+  background-color: #2a2a4b;
+`;
+
+const SkillTitle = styled(BigText)`
+  display: block;
+  border-bottom: 3px solid #494974;
 `;
 
 export function SkillListElement(skill: SkillData) {
   return (
     <SkillListElementRoot>
-      <BigText>{skill.name}</BigText>
+      <SkillTitle>{skill.name}</SkillTitle>
       <LevelComponent level={skill.level} />
       <SubText>{skill.description}</SubText>
     </SkillListElementRoot>
