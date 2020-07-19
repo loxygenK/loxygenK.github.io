@@ -19,14 +19,14 @@ export const LangSkills: SkillData[] = [
     level: Level["Favorite"],
   },
   {
-    name: "C#",
-    description: "Unityのときに使います",
-    level: Level["Intermediate"],
-  },
-  {
     name: "TypeScript",
     description: "Reactのときに使います",
     level: Level["Intermediate"],
+  },
+  {
+    name: "C#",
+    description: "Unityのときに使います",
+    level: Level["Bit"],
   },
   {
     name: "CSS",
