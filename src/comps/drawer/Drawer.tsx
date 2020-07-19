@@ -23,6 +23,8 @@ const DrawerRoot = styled.div`
   padding: 1em 0;
   width: 10em;
   height: 100vh;
+
+  z-index: 101;
 `;
 
 const AnimatedDrawerRoot = animated(DrawerRoot);

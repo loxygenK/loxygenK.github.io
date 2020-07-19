@@ -8,10 +8,10 @@ type DrawerNavigationProps = {
 
 export function DrawerNavigation(props: DrawerNavigationProps) {
   return (
-    <>
+    <div>
       {props.pages.map((page, index) => (
         <DrawerNavButton key={index} url={page.url} caption={page.caption} />
       ))}
-    </>
+    </div>
   );
 }

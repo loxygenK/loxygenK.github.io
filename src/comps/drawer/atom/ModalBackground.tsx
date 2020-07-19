@@ -9,6 +9,8 @@ const ModalBackgroundRoot = styled.div`
   left: 0;
   right: 0;
 
+  z-index: 100;
+
   backdrop-filter: blur(10px);
 `;
 
