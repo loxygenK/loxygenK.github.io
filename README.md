@@ -1,44 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# loxygenk.github.io
 
-## Available Scripts
+***Thank you very much to visiting the repository!***
+嬉しくて胸がはちきれそうな思いです。
 
-In the project directory, you can run:
+## これは何
 
-### `yarn start`
+　loxygen.k(フライさん)のポートフォリオサイトです。Reactを使用しています。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ページ遷移の度にリダイレクトするんですけど
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+　GitHub Actionsだと、このポートフォリオに使用している **`react-router`がそのままだと正常に動作しません** 。正常に動かすために、一度 **`404.html`に飛ばして、そこで目的のページにリダイレクトさせています** 。
 
-### `yarn test`
+　`404.html`からのリダイレクトの処理は`react-router`が行っています。
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+　この処理に当たって、有志の方が作成されたスクリプトを使用させていただいています。詳しくは[`public/404.html`](https://github.com/loxygenK/loxygenK.github.io/public/404.html)と[`index.html`](https://github.com/loxygenK/loxygenK.github.io/public/index.html)をご参照ください。
 
-### `yarn build`
+## ソースコードの構成
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+技術力のない人が作りたいものに無理やり似せていったのですごいコードになっているかもしれません…
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- リポジトリルート
+  - `my_own_linter/`<br />
+    コミットリンターが入っています。<br />
+    (別でnpmのパッケージがあるのは知ってるけど使い方がよくわからなかった)
+  - `public/`<br />
+    使用している`index.html`や画像などが入っています。
+  - `src/`<br />
+    ソースコードです。
+    - `comps/`<br />
+      コンポーネント群です。
+      - `common/`<br />
+        複数ページで使いまわして使うコンポーネントが入っています。
+      - `drawer/`<br />
+        スマートフォンからの閲覧時に使用できるドロワー関係のコンポーネントが入っています。
+      - `header/`<br />
+        ページ上部のヘッダーが入っています。
+      - `pages/`<br />
+        各ページのコンポーネントが入っています。
+      - `Router.tsx`<br />
+        ルーティングを行うためのコンポーネントです。
+    - `data/`<br />
+      データ群です。WorksやSkillなどの設定ファイルがここに入っています。
+  - その他ファイル<br />
+    ReactやTypescriptを動かすための設定ファイル群です。
