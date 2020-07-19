@@ -1,5 +1,5 @@
 import * as React from "react";
-import { MultipleRowList } from "../../../common/MultipleRowList";
+import { ResponsiveWidth } from "../../../common/ResponsiveWidth";
 import { WorkListElement } from "../atom/WorkListElement";
 import { Works } from "../../../../data/Works";
 
@@ -7,9 +7,9 @@ export function WorkList() {
   return (
     <>
       {Works.map((value, index) => (
-        <MultipleRowList key={index}>
+        <ResponsiveWidth key={index}>
           <WorkListElement workData={value} />
-        </MultipleRowList>
+        </ResponsiveWidth>
       ))}
     </>
   );

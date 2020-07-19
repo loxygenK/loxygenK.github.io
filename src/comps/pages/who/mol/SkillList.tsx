@@ -2,7 +2,7 @@ import * as React from "react";
 import { SkillData } from "../../../../data/types/SkillData";
 import styled from "styled-components";
 import { SkillListElement } from "../atom/SkilListElement";
-import { MultipleRowList } from "../../../common/MultipleRowList";
+import { ResponsiveWidth } from "../../../common/ResponsiveWidth";
 
 const Caption = styled.div`
   font-size: 1.2em;
@@ -11,7 +11,7 @@ const Caption = styled.div`
 
 export function SkillList(props: { caption: string; skills: SkillData[] }) {
   return (
-    <MultipleRowList>
+    <ResponsiveWidth>
       <Caption>{props.caption}</Caption>
       {props.skills.map((skill, index) => (
         <SkillListElement
@@ -21,6 +21,6 @@ export function SkillList(props: { caption: string; skills: SkillData[] }) {
           key={index}
         />
       ))}
-    </MultipleRowList>
+    </ResponsiveWidth>
   );
 }

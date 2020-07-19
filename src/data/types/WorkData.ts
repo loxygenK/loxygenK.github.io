@@ -4,4 +4,5 @@ export type WorkData = {
   techs: string[];
   description: string;
   tips: string;
+  link: string;
 };

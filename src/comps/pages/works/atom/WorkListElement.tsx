@@ -2,11 +2,11 @@ import * as React from "react";
 import styled from "styled-components";
 import { DetailedText, SubText } from "../../../common/Formatter";
 import { WorkData } from "../../../../data/types/WorkData";
+import { UnstyledAnchor } from "../../../common/UnstyledAnchor";
 
 const WorkListElementRoot = styled.span`
   display: inline-block;
-  padding: 0.3em;
-  margin-bottom: 3em;
+  padding: 0.5em;
 
   overflow-wrap: break-word;
 
@@ -15,7 +15,7 @@ const WorkListElementRoot = styled.span`
   transition: all 0.25s;
 
   :hover {
-    background: #31315c;
+    background: #444482;
   }
 `;
 
@@ -42,18 +42,20 @@ const UsedTechTag = styled.span`
 
 export function WorkListElement(props: { workData: WorkData }) {
   return (
-    <WorkListElementRoot>
-      <SizedImage src={props.workData.imageUrl} alt={props.workData.name} />
-      <WorkTitle>{props.workData.name}</WorkTitle>
-      <div>
-        {props.workData.techs.map((str, index) => (
-          <UsedTechTag key={index}>{str}</UsedTechTag>
-        ))}
-      </div>
-      <div>
-        <SubText>{props.workData.description}</SubText>
-      </div>
-      <DetailedText>{props.workData.tips}</DetailedText>
-    </WorkListElementRoot>
+    <UnstyledAnchor href={props.workData.link} target="_blank">
+      <WorkListElementRoot>
+        <SizedImage src={props.workData.imageUrl} alt={props.workData.name} />
+        <WorkTitle>{props.workData.name}</WorkTitle>
+        <div>
+          {props.workData.techs.map((str, index) => (
+            <UsedTechTag key={index}>{str}</UsedTechTag>
+          ))}
+        </div>
+        <div>
+          <SubText>{props.workData.description}</SubText>
+        </div>
+        <DetailedText>{props.workData.tips}</DetailedText>
+      </WorkListElementRoot>
+    </UnstyledAnchor>
   );
 }

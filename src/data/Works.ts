@@ -10,6 +10,7 @@ export const Works: WorkData[] = [
       "設計をすっぽかして作ってしまったせいでとんでもないウンコードになってしまった。",
     tips:
       "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html",
+    link: "https://github.com/loxygenK/musical_typer",
   },
   {
     imageUrl: "works/trailegger.png",
@@ -20,6 +21,7 @@ export const Works: WorkData[] = [
       "一応設計はしてあるのでmusical-typerよりもマシなはず。",
     tips:
       "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html",
+    link: "https://github.com/loxygenK/trailegger",
   },
   {
     imageUrl: "works/portfolio.png",
@@ -27,5 +29,6 @@ export const Works: WorkData[] = [
     techs: ["Typescript", "React"],
     description: "このポートフォリオ。React楽しい。",
     tips: "",
+    link: "https://github.com/loxygenK/loxygenK.github.io",
   },
 ];
