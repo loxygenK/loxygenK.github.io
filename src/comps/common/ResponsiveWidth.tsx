@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ResponsiveWidth = styled.div`
   vertical-align: top;
+  padding-bottom: 2em;
 
-  padding-bottom: 3em;
   @media screen and (min-width: 800px) {
     display: inline-block;
     box-sizing: border-box;
