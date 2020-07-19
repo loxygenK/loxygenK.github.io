@@ -4,6 +4,7 @@ import { HomePage } from "./pages/home/HomePage";
 import { NotFoundPage } from "./pages/Error404";
 import { WhoAmIPage } from "./pages/who/WhoAmIPage";
 import { WorksPage } from "./pages/works/WorksPage";
+import { ContactPage } from "./pages/contact/ContactPage";
 
 export function AppRouter(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export function AppRouter(): JSX.Element {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/who/" component={WhoAmIPage} />
         <Route exact path="/what-i-did/" component={WorksPage} />
+        <Route exact path="/contact/" component={ContactPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
