@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ResponsiveWidth } from "../../../common/ResponsiveWidth";
 import { WorkListElement } from "../atom/WorkListElement";
-import { Works } from "../../../../data/Works";
+import { Works } from "../../../../data/content/Works";
 
 export function WorkList() {
   return (

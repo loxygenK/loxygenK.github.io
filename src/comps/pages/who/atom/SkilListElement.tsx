@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SkillData } from "../../../../data/types/SkillData";
+import { SkillData } from "../../../../data/types/SkillTypes";
 import { BigText, SubText } from "../../../common/Formatter";
 import { LevelComponent } from "../../../common/types/LevelComponent";
 import styled from "styled-components";

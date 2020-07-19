@@ -4,7 +4,7 @@ import {
   FrameworkSkills,
   LangSkills,
   MiscSkills,
-} from "../../../../data/LangSkills";
+} from "../../../../data/content/LangSkills";
 import { SubTitle } from "../../../common/Formatter";
 import { SkillList } from "./SkillList";
 

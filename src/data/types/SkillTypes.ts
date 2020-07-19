@@ -19,7 +19,7 @@ export type LevelName =
   | "Intermediate"
   | "Favorite";
 
-export const Level: { [key in LevelName]: LevelData } = {
+export const SkillLevel: { [key in LevelName]: LevelData } = {
   OnlyInterested: {
     caption: "興味ありあり",
     icon: BsChatDotsFill,
@@ -40,4 +40,10 @@ export const Level: { [key in LevelName]: LevelData } = {
     caption: "すきすき",
     icon: AiFillHeart,
   },
+};
+
+export type SkillData = {
+  name: string;
+  description: string;
+  level: LevelData;
 };

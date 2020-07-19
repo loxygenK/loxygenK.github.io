@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BaseColors } from "data/Value";
 import { Header } from "comps/header/Header";
 import { AppRouter } from "./comps/Router";
-import { NavigatesTo } from "./data/NavigatesTo";
+import { NavigatesTo } from "./data/content/NavigatesTo";
 import { Drawer } from "./comps/drawer/Drawer";
 
 const ReactApp = styled.div`

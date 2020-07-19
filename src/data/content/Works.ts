@@ -1,4 +1,4 @@
-import { WorkData } from "./types/WorkData";
+import { WorkData } from "../types/WorkData";
 
 export const Works: WorkData[] = [
   {

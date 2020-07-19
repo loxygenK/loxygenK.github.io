@@ -1,4 +1,4 @@
-import { ContactData } from "./types/ContactData";
+import { ContactData } from "../types/ContactData";
 import { FaGithub, FaTwitter } from "react-icons/all";
 
 export const Contacts: ContactData[] = [

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { LevelData } from "../../../data/types/Level";
 import styled from "styled-components";
+import { LevelData } from "../../../data/types/SkillTypes";
 
 export const LevelComponentRoot = styled.div`
   font-size: 0.7em;
