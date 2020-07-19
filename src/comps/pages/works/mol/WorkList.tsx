@@ -8,7 +8,7 @@ export function WorkList() {
       <WorkListElement
         imgUrl={"works/musical-typer.png"}
         name={"musical-typer"}
-        techs={["Python"]}
+        techs={["Python", "Pygame"]}
         description={"musical-typer"}
         tips={
           "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html"

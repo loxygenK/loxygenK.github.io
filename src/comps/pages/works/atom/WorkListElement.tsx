@@ -24,6 +24,14 @@ const WorkTitle = styled.div`
   border-bottom: 2px solid #494974;
 `;
 
+const UsedTechTag = styled.span`
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  margin: 0 0.3em 0.1em 0;
+  background-color: #2f2f4c;
+  font-size: 0.5em;
+`;
+
 export function WorkListElement(props: {
   imgUrl: string;
   name: string;
@@ -35,6 +43,11 @@ export function WorkListElement(props: {
     <WorkListElementRoot>
       <SizedImage src={props.imgUrl} alt={props.name} />
       <WorkTitle>{props.name}</WorkTitle>
+      <div>
+        {props.techs.map((str, index) => (
+          <UsedTechTag key={index}>{str}</UsedTechTag>
+        ))}
+      </div>
       <div>{props.description}</div>
       <DetailedText>{props.tips}</DetailedText>
     </WorkListElementRoot>
