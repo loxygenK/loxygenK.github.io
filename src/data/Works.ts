@@ -9,7 +9,7 @@ export const Works: WorkData[] = [
       "歌詞と同じタイミングで流れてくる歌詞をタイプするゲーム。" +
       "設計をすっぽかして作ってしまったせいでとんでもないウンコードになってしまった。",
     tips:
-      "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html",
+      "以下の著作物を規約の元使用しています: 「キミノチカラ」(http://www.music-note.jp/)",
     link: "https://github.com/loxygenK/musical_typer",
   },
   {
@@ -20,7 +20,7 @@ export const Works: WorkData[] = [
       "Kotlinで作ったOSUのキーボード版みたいな音ゲー。" +
       "一応設計はしてあるのでmusical-typerよりもマシなはず。",
     tips:
-      "以下のサイトの著作物を使用しています: http://www.music-note.jp/terms/index.html",
+      "以下の著作物を規約の元使用しています: 「キミノチカラ」(http://www.music-note.jp/)",
     link: "https://github.com/loxygenK/trailegger",
   },
   {
