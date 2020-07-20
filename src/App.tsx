@@ -20,6 +20,11 @@ const FixedHeader = styled.header`
 
   width: 100%;
   height: 4.5rem;
+
+  z-index: 95;
+  & * {
+    z-index: 95;
+  }
 `;
 
 const ContentWrapper = styled.div`
