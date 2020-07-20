@@ -1,5 +1,5 @@
 import { ContactData } from "data/types/ContactData";
-import { FaGithub, FaTwitter } from "react-icons/all";
+import { FaGithub, FaMailBulk, FaTwitter } from "react-icons/all";
 
 export const Contacts: ContactData[] = [
   {
@@ -19,5 +19,11 @@ export const Contacts: ContactData[] = [
     color: "#4b4b4b",
     icon: FaGithub,
     link: "https://github.com/loxygenK",
+  },
+  {
+    caption: "E-mail",
+    color: "#ca4639",
+    icon: FaMailBulk,
+    link: "mailto:contact@loxygen.dev",
   },
 ];
