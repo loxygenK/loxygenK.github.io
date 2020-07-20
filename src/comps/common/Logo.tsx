@@ -30,7 +30,7 @@ export function Logo() {
   return (
     <LogoWrapper href="/">
       <MainNameDiv>loxygen.k</MainNameDiv>
-      <SubNameDiv>flisan</SubNameDiv>
+      <SubNameDiv>frysan</SubNameDiv>
     </LogoWrapper>
   );
 }

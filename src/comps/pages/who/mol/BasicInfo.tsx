@@ -28,7 +28,7 @@ export function BasicInfo() {
     <BasicInfoWrapper>
       <SubTitle>自己紹介</SubTitle>
       <WrappedIcon />
-      <BigText>loxygen.k</BigText> or Flisan
+      <BigText>loxygen.k</BigText> or Frysan
       <br />
       <SubTextBlock>
         茨城工業高等専門学校 国際創造工学科 <br />
