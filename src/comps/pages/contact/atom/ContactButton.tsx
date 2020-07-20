@@ -10,9 +10,9 @@ export const ContactButtonRoot = styled.div<{
   color: #ffffff;
 
   padding: 0.3em 0.7em;
-  margin: 0 0.75em;
+  margin: 0.75em;
 
-  @media screen and (max-width: 30em) {
+  @media screen and (max-width: 50em) {
     margin: 0 0 0.5em 0;
   }
 `;
@@ -21,7 +21,7 @@ export const Icon = styled.span`
   vertical-align: middle;
   margin-right: 0.5em;
 
-  @media screen and (max-width: 60em) and (min-width: 30em) {
+  @media screen and (max-width: 90em) and (min-width: 50em) {
     display: block;
     margin-right: 0;
     text-align: center;
@@ -32,7 +32,7 @@ export const Icon = styled.span`
 export const Caption = styled.span`
   line-height: 1em;
 
-  @media screen and (max-width: 60em) and (min-width: 30em) {
+  @media screen and (max-width: 90em) and (min-width: 50em) {
     display: block;
     text-align: center;
   }
@@ -42,7 +42,7 @@ export const LinkText = styled.div`
   opacity: 0.6;
   font-size: 0.75em;
 
-  @media screen and (max-width: 60em) and (min-width: 30em) {
+  @media screen and (max-width: 90em) and (min-width: 50em) {
     display: none;
   }
 `;

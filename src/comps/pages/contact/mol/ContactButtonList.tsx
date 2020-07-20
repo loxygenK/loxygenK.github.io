@@ -8,7 +8,7 @@ const ContactButtonsRoot = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 30em) {
+  @media screen and (max-width: 50em) {
     margin: 1em 0;
     display: block;
   }
