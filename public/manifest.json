@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "loxygen's portfolio",
+  "name": "loxygen's (or flisan's) Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "1120x1120"
     },
     {
-      "src": "logo192.png",
+      "src": "loxygen.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "1120x1120"
     },
     {
-      "src": "logo512.png",
+      "src": "loxygen-circle.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1120x1120"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#181821"
 }
