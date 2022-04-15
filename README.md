@@ -1,5 +1,11 @@
 # loxygenk.github.io
 
+**THIS REPOSITORY AND THE WEBSITE `loxygenK.github.io` IS NO LONGER MAINTAINED - このリポジトリと `loxygenK.github.io` はメンテナンスされていません**．
+
+New repository: [loxygenK/f4n.dev](https://github.com/loxygenK/f4n.dev)
+
+---
+
 ***Thank you very much to visiting the repository!***
 嬉しくて胸がはちきれそうな思いです。
 
